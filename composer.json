@@ -1,0 +1,31 @@
+{
+  "name": "phpyii/php-utils",
+  "description": "php积累的一些公用类方法",
+  "license": "Apache",
+  "keywords": [
+    "php",
+    "php-utils",
+    "utils",
+    "common"
+  ],
+  "homepage": "https://github.com/phpyii/php-utils",
+  "authors": [
+    {
+      "name": "lyf",
+      "email": "381296986@qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "phpyii\\utils\\": "./src/"
+    }
+  },
+  "support": {
+    "issues": "https://github.com/phpyii/php-utils/issues",
+    "source": "https://github.com/phpyii/php-utils"
+  },
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "minimum-stability": "stable"
+}
