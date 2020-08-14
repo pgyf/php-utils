@@ -61,7 +61,7 @@ class ArrayHelper {
      * @param string $pk       主键字段
      * @param string $fk       外键字段
      * @param array $fkKeys    需要合并的键
-     * @return type
+     * @return array
      */
     public static function relationAppendKey(array $pkArray, array $fkArray, string $pk, string $fk, array $fkKeys, $isCover = false) {
         $result = [];
@@ -93,4 +93,58 @@ class ArrayHelper {
         }
         return $result;
     }
+    
+    /**
+     * 随机返回数组的值
+     * @param array $array    数组
+     * @param int $len  数量
+     * @return array|bool|mixed
+     */
+    public static function rand($array, $len = 1)
+    {
+        if (!is_array($array)) {
+            return false;
+        }
+        $keys = array_rand($array, $len);
+        if ($len === 1) {
+            return $array[$keys];
+        }
+        return array_intersect_key($array, array_flip($keys));
+    }
+    
+    /**
+     * 返回两个数组中不同的元素
+     * @param array $array
+     * @param array $array1
+     * @return array
+     */
+    public static function diffBoth($array, $array1)
+    {
+        return array_merge(array_diff($array, $array1), array_diff($array1, $array));
+    }
+    
+    /**
+     * 统计一维数组元素出现的次数
+     * @return array|bool
+     */
+    public static function count(...$args)
+    {
+        $data = $args;
+        $num = count($args);
+        $result = [];
+        if ($num > 0) {
+            for ($i = 0; $i < $num; $i ++) {
+                foreach ($data[$i] as $v) {
+                    if (isset($result[$v])) {
+                        $result[$v] ++;
+                    } else {
+                        $result[$v] = 1;
+                    }
+                }
+            }
+            return $result;
+        }
+        return $result;
+    }
+    
 }
