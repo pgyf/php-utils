@@ -5,11 +5,10 @@ declare (strict_types = 1);
 namespace phpyii\utils;
 
 /**
- * Description of ArrayHelper
- *
+ * 数组类
  * @author lyf
  */
-class ArrayHelper {
+class Arrays {
     
     /**
      * 二维数组添加索引
