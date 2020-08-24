@@ -8,7 +8,7 @@ namespace phpyii\utils;
  * 数组类
  * @author lyf
  */
-class Arrays {
+class Arr {
     
     /**
      * 二维数组添加索引
@@ -144,6 +144,33 @@ class Arrays {
             return $result;
         }
         return $result;
+    }
+    
+    
+   /**
+     * Convert the array into a query string.
+     * 数组转为查询字符串
+     * @param  array  $array
+     * @return string
+     */
+    public static function query($array)
+    {
+        return http_build_query($array, '', '&', PHP_QUERY_RFC3986);
+    }
+    
+    
+    /**
+     * If the given value is not an array and not null, wrap it in one.
+     * 把一个不是数组的变量用数组包装
+     * @param  mixed  $value
+     * @return array
+     */
+    public static function wrap($value)
+    {
+        if (is_null($value)) {
+            return [];
+        }
+        return is_array($value) ? $value : [$value];
     }
     
 }
