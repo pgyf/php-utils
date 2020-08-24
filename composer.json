@@ -1,7 +1,7 @@
 {
   "name": "phpyii/php-utils",
   "description": "php积累的一些公用类方法",
-  "license": "Apache",
+  "license": "MIT",
   "keywords": [
     "php",
     "php-utils",
@@ -17,7 +17,7 @@
   ],
   "autoload": {
     "psr-4": {
-      "phpyii\\utils\\": "./src/"
+      "phpyii\\utils\\": "src/"
     }
   },
   "support": {
@@ -25,7 +25,8 @@
     "source": "https://github.com/phpyii/php-utils"
   },
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.6.0"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "prefer-stable": true
 }
