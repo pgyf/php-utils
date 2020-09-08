@@ -10,7 +10,7 @@ use SimpleXMLElement;
  * 微信xml类
  * from https://github.com/overtrue/wechat
  * 调用方法 WechatXml::build(数组)
- * @author lyf
+ * @author 最初的梦想
  */
 class WechatXml {
     

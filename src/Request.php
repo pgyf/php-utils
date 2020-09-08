@@ -6,8 +6,8 @@ namespace phpyii\utils;
 
 /**
  * Description of Requests
- *
- * @author lyf
+ * 请求类
+ * @author 最初的梦想
  */
 class Request {
 

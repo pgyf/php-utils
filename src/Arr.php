@@ -10,7 +10,7 @@ use InvalidArgumentException;
 
 /**
  * 数组类
- * @author lyf
+ * @author 最初的梦想
  */
 class Arr {
     

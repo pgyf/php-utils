@@ -13,7 +13,7 @@ use BadMethodCallException;
  * Description of Macroable
  * 扩展类功能
  * from https://github.com/spatie/macroable
- * @author lyf
+ * @author 最初的梦想
  */
 trait Macroable
 {

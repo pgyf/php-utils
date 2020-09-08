@@ -6,8 +6,8 @@ namespace phpyii\utils;
 
 /**
  * Description of Str
- *
- * @author lyf
+ * 字符串类
+ * @author 最初的梦想
  */
 class Str {
 
