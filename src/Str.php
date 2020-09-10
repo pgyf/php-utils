@@ -5,7 +5,6 @@ declare (strict_types = 1);
 namespace phpyii\utils;
 
 /**
- * Description of Str
  * 字符串类
  * @author 最初的梦想
  */

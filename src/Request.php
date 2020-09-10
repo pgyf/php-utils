@@ -5,7 +5,6 @@ declare (strict_types = 1);
 namespace phpyii\utils;
 
 /**
- * Description of Requests
  * 请求类
  * @author 最初的梦想
  */
