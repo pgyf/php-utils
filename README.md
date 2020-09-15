@@ -8,6 +8,9 @@ php积累的一些公用类方法
 ```
 composer require phpyii/php-utils
 
+//开发版本
+composer require phpyii/php-utils:dev-master
+
 ```
 
 # 枚举类使用方法
